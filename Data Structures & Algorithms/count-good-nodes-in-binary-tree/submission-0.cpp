@@ -9,7 +9,7 @@
  *     TreeNode(int x, TreeNode *left, TreeNode *right) : val(x), left(left), right(right) {}
  * };
  */
-
+//brute force solution
 class Solution {
 public:
     int helper(TreeNode* root, vector<int>& nums){
