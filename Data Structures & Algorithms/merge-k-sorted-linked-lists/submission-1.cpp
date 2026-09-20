@@ -39,6 +39,22 @@ public:
         return ans->next;
     }
 
+/*
+    Brute force 
+    ListNode* mergeKLists(vector<ListNode*>& lists) {
+        if(lists.size() == 0) return nullptr;
+
+        ListNode* mergedList = lists[0];
+
+        for(int i = 1; i < lists.size(); i++){
+            mergedList = mergeTwoLists(mergedList, lists[i]);
+        }
+
+        return mergedList;
+    }
+};
+*/
+//Optimal
     ListNode* mergeKLists(vector<ListNode*>& lists) {
         if(lists.size() == 0) return nullptr;
 
